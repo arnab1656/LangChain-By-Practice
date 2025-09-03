@@ -1,9 +1,12 @@
-from langchain_openai import ChatOpenAI
+from langchain_anthropic import ChatAnthropic
 from dotenv import load_dotenv
 
 load_dotenv() 
 
-llm = ChatOpenAI(model="gpt-4o",temperature = 1.2)
+llm = ChatAnthropic(
+    model="claude-3-7-sonnet-20250219",
+    temperature=1.2,
+)
 
 messages = [
     (
@@ -12,15 +15,11 @@ messages = [
     ),
     ("human", "Hello who is the GOAT in Football"),
 ]
-
-# res = llm.invoke("Hello who is the GOAT in Football")
-
-# invoking the llm using the Array 
-
 res = llm.invoke(messages)
 
 
-print("Chat Model Response --->\n")
+print("The Response is -> \n")
 print(res.content)
+
 
 
