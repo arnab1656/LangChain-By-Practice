@@ -1,0 +1,13 @@
+{
+  "name": null,
+  "input_variables": ["length_input", "paper_input", "style_input"],
+  "optional_variables": [],
+  "output_parser": null,
+  "partial_variables": {},
+  "metadata": null,
+  "tags": null,
+  "template": "\nPlease provide a detailed explanation about the sports personality or topic: \"{paper_input}\" with the following specifications:\nExplanation Style: {style_input}  \nExplanation Length: {length_input}  \n\n1. Career Highlights:  \n   - Include key achievements, records, and milestones.  \n   - Mention any notable awards or recognitions.  \n\n2. Playing Style & Techniques:  \n   - Explain their unique skills, techniques, or strategies.  \n   - If applicable, include simple, intuitive examples or code-like breakdowns of statistics (e.g., goals, runs, assists).\n\n3. Analogies:  \n   - Use relatable analogies to simplify complex sports terms or moments.  \n\nIf certain information is not available about this personality or topic, respond with: \"Insufficient information available\" instead of guessing.  \nEnsure the explanation is clear, accurate, and aligned with the provided style and length.\n",
+  "template_format": "f-string",
+  "validate_template": true,
+  "_type": "prompt"
+}
